@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Practica_6</string>
+    <string-array name="conversiones">
+        <item>Fahrenheit</item>
+        <item>Celsius</item>
+        <item>Kelvin</item>
+    </string-array>
 </resources>
