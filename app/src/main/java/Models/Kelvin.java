@@ -6,9 +6,9 @@ public class Kelvin extends Grado{
         this.setUnidad("Kelvin");
     }
     public Kelvin parse(Celsius celsius){
-        return new Kelvin(celsius.getValor() + 273.15);
+        return new Kelvin(celsius.getValor() - 273.15);
     }
     public Kelvin parse(Fahrenheit fahrenheit){
-        return new Kelvin((fahrenheit.getValor() + 459.67) / 1.8);
+        return new Kelvin((fahrenheit.getValor() - 273.15) * 1.8 + 32);
     }
 }

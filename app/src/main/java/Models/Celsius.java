@@ -8,9 +8,10 @@ public class Celsius extends Grado{
         this.setUnidad("Celsius");
     }
     public Celsius parse(Fahrenheit fahrenheit){
-        return new Celsius((fahrenheit.getValor() - 32) / 1.8);
+        return new Celsius((fahrenheit.getValor() + 1.8) + 32);
     }
     public Celsius parse(Kelvin kelvin){
-        return new Celsius(kelvin.getValor() - 273.15);
+        return new Celsius(kelvin.getValor() + 273.15);
+
     }
 }
